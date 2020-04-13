@@ -70,4 +70,11 @@ class LatinSquareSolver():
         return index
 
     def get_result(self):
-        return self.__result
+        result = self.__result
+        self.reset()
+        return result
+
+    def reset(self):
+        self.__result = []
+        self.__size = 0
+        self.__combination = []
