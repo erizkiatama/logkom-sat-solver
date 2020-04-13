@@ -25,7 +25,6 @@ class Solver(QDialog, Ui_Solver):
         super(Solver, self).__init__(parent)
         self.setupUi(self, n)
         self.solve(n, solverBE.get_result())
-        self.back_button.clicked.connect(self.close)
 
     def solve(self, n, result):
     	for i in range(n):

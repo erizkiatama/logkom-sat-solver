@@ -3,9 +3,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Solver(object):
     def setupUi(self, Solver, n):
         Solver.setObjectName("Solver")
-        Solver.resize((30*n)+42, (30*n)+112)
-        Solver.setMinimumSize(QtCore.QSize((30*6)+42, (30*6)+112))
-        Solver.setMaximumSize(QtCore.QSize((30*n)+42, (30*n)+112))
+        Solver.resize((30*n)+42, (30*n)+66)
+        Solver.setMinimumSize(QtCore.QSize((30*4)+42, (30*4)+66))
+        Solver.setMaximumSize(QtCore.QSize((30*n)+42, (30*n)+66))
         
         self.verticalLayout = QtWidgets.QVBoxLayout(Solver)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -25,11 +25,6 @@ class Ui_Solver(object):
         
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-        
-        self.back_button = QtWidgets.QPushButton(Solver)
-        self.back_button.setObjectName("back_button")
-        
-        self.horizontalLayout.addWidget(self.back_button)
         self.verticalLayout.addLayout(self.horizontalLayout)
 
         self.retranslateUi(Solver)
@@ -39,4 +34,3 @@ class Ui_Solver(object):
         _translate = QtCore.QCoreApplication.translate
         Solver.setWindowTitle(_translate("Solver", "Solver"))
         self.label.setText(_translate("Solver", "Here's the result"))
-        self.back_button.setText(_translate("Solver", "Back"))
