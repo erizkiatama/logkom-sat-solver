@@ -38,5 +38,5 @@ class Ui_Solver(object):
     def retranslateUi(self, Solver):
         _translate = QtCore.QCoreApplication.translate
         Solver.setWindowTitle(_translate("Solver", "Solver"))
-        self.label.setText(_translate("Solver", "Hit \'Solve\' to show solution."))
+        self.label.setText(_translate("Solver", "Here's the result"))
         self.back_button.setText(_translate("Solver", "Back"))
